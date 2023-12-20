@@ -320,7 +320,7 @@ class StoryItem {
   factory StoryItem.inlineProviderImage(
     ImageProvider image, {
     Key? key,
-    Text? caption,
+    Widget? caption,
     bool shown = false,
     bool roundedTop = true,
     bool roundedBottom = false,
@@ -340,13 +340,13 @@ class StoryItem {
               fit: BoxFit.cover,
             )),
         child: Container(
-          margin: EdgeInsets.only(
-            bottom: 16,
-          ),
-          padding: EdgeInsets.symmetric(
-            horizontal: 24,
-            vertical: 8,
-          ),
+          // margin: EdgeInsets.only(
+          //   bottom: 16,
+          // ),
+          // padding: EdgeInsets.symmetric(
+          //   horizontal: 24,
+          //   vertical: 8,
+          // ),
           child: Align(
             alignment: Alignment.bottomLeft,
             child: Container(
