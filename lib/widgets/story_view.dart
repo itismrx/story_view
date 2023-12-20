@@ -187,7 +187,7 @@ class StoryItem {
                     alignment: Alignment.bottomLeft,
                     child: Container(
                       padding:
-                          EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                          // EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                       child: caption == null ? SizedBox() : caption,
                       width: double.infinity,
                     ),
