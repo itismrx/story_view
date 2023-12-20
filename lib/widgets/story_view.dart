@@ -131,13 +131,13 @@ class StoryItem {
                 alignment: Alignment.bottomCenter,
                 child: Container(
                   width: double.infinity,
-                  // margin: EdgeInsets.only(
-                  //   bottom: 24,
-                  // ),
-                  // padding: EdgeInsets.symmetric(
-                  //   horizontal: 20,
-                  //   vertical: 12,
-                  // ),
+                  margin: EdgeInsets.only(
+                    bottom: 24,
+                  ),
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 24,
+                    vertical: 8,
+                  ),
                   color: caption != null ? Colors.black54 : Colors.transparent,
                   child: caption == null ? SizedBox() : caption,
                 ),
@@ -181,8 +181,8 @@ class StoryItem {
                   requestHeaders: requestHeaders,
                 ),
                 Container(
-                  margin: EdgeInsets.only(bottom: 16),
-                  padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+                  // margin: EdgeInsets.only(bottom: 16),
+                  // padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
                   child: Align(
                     alignment: Alignment.bottomLeft,
                     child: Container(
