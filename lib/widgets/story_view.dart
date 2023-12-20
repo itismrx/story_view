@@ -134,10 +134,10 @@ class StoryItem {
                   // margin: EdgeInsets.only(
                   //   bottom: 24,
                   // ),
-                  padding: EdgeInsets.symmetric(
-                    horizontal: 20,
-                    vertical: 12,
-                  ),
+                  // padding: EdgeInsets.symmetric(
+                  //   horizontal: 20,
+                  //   vertical: 12,
+                  // ),
                   color: caption != null ? Colors.black54 : Colors.transparent,
                   child: caption == null ? SizedBox() : caption,
                 ),
