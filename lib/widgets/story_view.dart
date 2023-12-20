@@ -109,7 +109,7 @@ class StoryItem {
     required StoryController controller,
     Key? key,
     BoxFit imageFit = BoxFit.fitWidth,
-    String? caption,
+    Widget? caption,
     bool shown = false,
     Map<String, dynamic>? requestHeaders,
     Duration? duration,
@@ -139,16 +139,7 @@ class StoryItem {
                     vertical: 8,
                   ),
                   color: caption != null ? Colors.black54 : Colors.transparent,
-                  child: caption != null
-                      ? Text(
-                          caption,
-                          style: TextStyle(
-                            fontSize: 15,
-                            color: Colors.white,
-                          ),
-                          textAlign: TextAlign.center,
-                        )
-                      : SizedBox(),
+                  child: caption == null ? SizedBox() : caption,
                 ),
               ),
             )
@@ -164,7 +155,7 @@ class StoryItem {
   /// one passed to the `StoryView`
   factory StoryItem.inlineImage({
     required String url,
-    Text? caption,
+    Widget? caption,
     required StoryController controller,
     Key? key,
     BoxFit imageFit = BoxFit.cover,
@@ -826,11 +817,11 @@ class StoryProgressIndicator extends StatelessWidget {
         this.indicatorHeight,
       ),
       foregroundPainter: IndicatorOval(
-        this.indicatorForegroundColor?? Colors.white.withOpacity(0.8),
+        this.indicatorForegroundColor ?? Colors.white.withOpacity(0.8),
         this.value,
       ),
       painter: IndicatorOval(
-        this.indicatorColor?? Colors.white.withOpacity(0.4),
+        this.indicatorColor ?? Colors.white.withOpacity(0.4),
         1.0,
       ),
     );

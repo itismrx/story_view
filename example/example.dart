@@ -168,21 +168,21 @@ class _MoreStoriesState extends State<MoreStories> {
           StoryItem.pageImage(
             url:
                 "https://image.ibb.co/cU4WGx/Omotuo-Groundnut-Soup-braperucci-com-1.jpg",
-            caption: "Still sampling",
+            caption: Text("Still sampling"),
             controller: storyController,
           ),
           StoryItem.pageImage(
               url: "https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif",
-              caption: "Working with gifs",
+              caption: Text("Working with gifs"),
               controller: storyController),
           StoryItem.pageImage(
             url: "https://media.giphy.com/media/XcA8krYsrEAYXKf4UQ/giphy.gif",
-            caption: "Hello, from the other side",
+            caption: Text("Hello, from the other side"),
             controller: storyController,
           ),
           StoryItem.pageImage(
             url: "https://media.giphy.com/media/XcA8krYsrEAYXKf4UQ/giphy.gif",
-            caption: "Hello, from the other side2",
+            caption: Text("Hello, from the other side2"),
             controller: storyController,
           ),
         ],
